@@ -4,14 +4,42 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <title>Salary Calculator</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
     <h1>Salary Calculator</h1>
   </header>
   <main>
+    <section>
     <h2>Add Employee</h2>
+    <form>
+      <input
+      placeholder="First Name"
+      type="text"
+      id="firstName">
+      <input
+      placeholder="Last Name"
+      type="text"
+      id="lastName">
+      <input
+      placeholder="ID"
+      type="number"
+      id="IDnumber">
+      <input
+      placeholder="Title"
+      type="text"
+      id="title">
+      <input
+      placeholder="Annual Salary"
+      type="number"
+      id="annualSalary">
+      <button data-testID="submitButton" class="submitButton">Submit</button>
+    </form>
+  </section>
     <h2>Employees</h2>
+    
   </main>
   <footer>
     <p>Total Monthly</p>

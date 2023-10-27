@@ -1,0 +1,32 @@
+- Add header to page with text "Salary Calculator"
+    - center text
+- Add a section for input
+    - add input header with text "Add Employee"
+    - add five input boxes (a form element) for "First Name", "Last Name", "ID number", "Title", "Annual Salary"
+        - insert onsubmit="onSubmit(event)" attribute to form element to trigger onSubmit(event) function to run when you click the submit button
+        - add placeholder text for each input box
+    - add "Submit" button (with text "Submit")
+    - create an onSubmit function to:
+        - add row to table (<tr>) with corresponding info in each corresponding column
+        - within onSubmit function, call an event.preventDefault() function to override default form settings
+        - reset form input values to zero upon clicking submit:
+            - select for 
+        - 
+- Add a section for employee table (form)
+    - Add section (I guess?) for a label *above* the actual table
+    - Add table to section for the actual table
+        - Add table header with labels for each column (<td> element for each column)
+        - Add delete button <td>
+            - Create deleteEmployee function to delete the ROW from the table if (read: event) you click the delete button 
+- Add footer to display "Total Monthly Budget"
+    - make a variable totalMonthly and set initial value equal to zero
+    - set its value equal to the sum of employee salaries...
+    - create a sumSalaries function to add all of the employee salaries together
+       [maybe save this process for the stretch goal - loop through table?
+        - for each 
+        - select for the annualSalaryInput value of the selected employee]
+    
+==> For stretch goal, you would have to push each employee into an array as an employee and then loop through the array
+in order to sum all of the annual salaries. And also probably create a decrementSalary
+
+    

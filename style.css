@@ -23,3 +23,49 @@ footer {
 }
 
 /* HEADER/FOOTER */
+header, footer {
+
+}
+h1 {
+
+}
+h2 {
+
+}
+
+/* FORM ELEMENTS */
+input {
+
+}
+button {
+
+}
+
+.submit-button {
+
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    text-align: left;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 2.15em;
+}
+th, td {
+    padding: .5em;
+    min-width: 3.5em;
+}
+thead {
+    background: gray;
+    color: #fcfcfc;
+}
+tbody tr:nth-child(odd) {
+    background: #fcfcfc;
+}
+tbody tr:nth-child(even) {
+    background: gray;
+}

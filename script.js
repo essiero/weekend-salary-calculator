@@ -27,7 +27,9 @@ function handleSubmit(event){
     </tr>`;
     totalMonthly += annualSalary/12;
     document.getElementById('counter').textContent = `Total Monthly: ${totalMonthly}`;
-
+    if(totalMonthly>20000){
+        document.getElementById('counter').style.color="red";
+    }
 }
 
 function deleteEmployee(event){
@@ -35,8 +37,6 @@ function deleteEmployee(event){
     event.target.parentElement.parentElement.remove();
 
 }
-
-
 
 function onReady () {
     console.log('Javascript is working!');

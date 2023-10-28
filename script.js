@@ -26,9 +26,13 @@ function handleSubmit(event){
     <td><button onclick="deleteEmployee(event)">❌</button></td>
     </tr>`;
     totalMonthly += annualSalary/12;
-    document.getElementById('counter').textContent = `Total Monthly: ${totalMonthly}`;
+    let USDollar = new Intl.NumberFormat('en-us', {
+        style: 'currency',
+        currency: 'USD',
+    });
+    document.getElementById('number').textContent = `${USDollar.format(totalMonthly)}`;
     if(totalMonthly>20000){
-        document.getElementById('counter').style.color="red";
+        document.getElementById('number').style.color="red";
     }
 }
 

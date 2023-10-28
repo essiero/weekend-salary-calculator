@@ -27,5 +27,5 @@
         - select for the annualSalaryInput value of the selected employee]
     
 ==> For stretch goal, you would have to push each employee into an array as an employee and then loop through the array
-in order to sum all of the annual salaries. And also probably create a decrementSalary
+in order to sum all of the annual salaries. And also probably create a decrementSalary function
     

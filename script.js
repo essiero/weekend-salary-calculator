@@ -2,6 +2,7 @@ onReady();
 
 // to update Counter: use innerHTML
 let totalMonthly = 0;
+let employeeArray = [];
 
 function handleSubmit(event){
     event.preventDefault();
@@ -34,6 +35,14 @@ function handleSubmit(event){
     if(totalMonthly>20000){
         document.getElementById('number').style.color="red";
     }
+    let employeeAdded = {
+        name: firstName + lastName,
+        ID: IDNumber,
+        title: title,
+        monthlySalary: annualSalary/12
+    }
+    employeeArray.push(employeeAdded);
+    console.log(employeeArray)
 }
 
 function deleteEmployee(event){

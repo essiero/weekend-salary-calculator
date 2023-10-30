@@ -39,10 +39,11 @@ function handleSubmit(event){
     <td>${IDNumber}</td>
     <td>${title}</td>
     <td>${USDollar.format(annualSalary)}</td>
-    <td><button onclick="deleteEmployee(event)">❌</button></td>
+    <td><button onclick="deleteEmployee(event, ${annualSalary})">❌</button></td>
     </tr>`;
+    // massive, massive props to Hannah for figuring out how to solve the stretch in the simplest way that didn't involve 
     totalMonthly += annualSalary/12;
-   /* FROM MATT'S LECTURE:
+
    let annualSalary = 0;
    let totalAnnualSalary += Number (totalAnnualSalary)
 // Selects footer, accesses its CSS class list and adds a new 'over-budget' CSS class to it
@@ -93,9 +94,14 @@ function handleSubmit(event){
 // }
 // }
 
-function deleteEmployee(event){
+function deleteEmployee(event, annualSalary){
     console.log(`deleteEmployee function is running`);
     event.target.parentElement.parentElement.remove();
+    // you need to use -= and not just - in order to 'return' the new value
+    totalMonthly -= annualSalary/12;
+    if (totalMonthly<=20000){
+        document.querySelector('footer').classList.remove('over-budget');
+    }
 // you can also go up until you find a table row!
 // selects the button that was clicked (event.target)
 // travels upward through the DOM structure to find the first <tr> element: .closest('tr')

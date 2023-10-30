@@ -14,6 +14,11 @@ header {
     text-align: center;
     background-color: gray;
     color: white;
+    border-radius: 10px;
+    width: 25%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 main {
 
@@ -24,7 +29,7 @@ header, footer {
     
 }
 footer {
-    text-align: right;
+    text-align: left;
 
 }
 .over-budget{
@@ -55,7 +60,7 @@ table {
     text-align: left;
 }
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid black ;
     border-collapse: collapse;
     height: 2.15em;
 }

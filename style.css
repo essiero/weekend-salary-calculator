@@ -18,13 +18,17 @@ header {
 main {
 
 }
-footer {
-
-}
 
 /* HEADER/FOOTER */
 header, footer {
+    
+}
+footer {
+    text-align: right;
 
+}
+.over-budget{
+    color: red;
 }
 h1 {
 
